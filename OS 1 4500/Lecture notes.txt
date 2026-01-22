@@ -1,0 +1,28 @@
+Lecture 1:
+Sourav Purification
+spurific@uccs.edu
+
+Understand OS abstraction
+Analyze system resource Management
+Apply Concurrency Fundamentals
+introduce systems security
+
+OS overview:
+read 1.1-1.2
+
+computers have 2 modes
+user mode
+kernal mode
+
+transitions between user/kernal
+    hardware interrupt
+    system call
+    exception
+
+
+different types of OS   
+    batch processing - process job one at a time
+    time sharing OS - process mulitple jobs in round robin
+    real-time OS - still time-sharing, but has deadlines for certain jobs
+    distributed OS - multiple computers run a single copy of OS
+    embedded OS - runs on cell phones and PDA's

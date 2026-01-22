@@ -1,0 +1,20 @@
+Lecture 1:
+
+amoin@uccs.edu
+office ENGR EAS/233A
+what are?
+
+
+reverse engineering
+re-engineering
+CI continuous Integration
+CD Continuous Delivery/deployment
+DevOps and DevSecOps
+Ai-enabled anaylisis approach
+Model-driven Software and Domain-specific modeling
+
+
+start looking for projects:
+must already exist and be open source MIT/BSD/Apache/LGPL/GPL
+
+check out rust and memory saftey
