@@ -26,3 +26,6 @@ different types of OS
     real-time OS - still time-sharing, but has deadlines for certain jobs
     distributed OS - multiple computers run a single copy of OS
     embedded OS - runs on cell phones and PDA's
+
+
+Kernel is the heart of OS
