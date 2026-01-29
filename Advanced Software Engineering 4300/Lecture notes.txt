@@ -8,3 +8,29 @@ thasting@uccs.edu
 
 TA: Abin Acharya: aachary2@uccs.edu
 
+Lecture 3:
+
+1960s - software crisis
+    hardware progressed faster then software so software had to catch up
+    lunar lander code was hella buggy and failed frequently
+    how can we make scalable reliable code?
+
+Distributed systems - sharing is caring, pay for what you use  
+
+shared responsibility model
+    customer
+        customer data
+        platform, app, id and access Managementos network firewall config
+        other saftey
+    AWS
+        software
+            compute 
+            storeage
+            hardware
+
+    cloud needs
+        compute
+        storeage
+        network
+        security
+        

@@ -29,3 +29,19 @@ different types of OS
 
 
 Kernel is the heart of OS
+
+Register
+Cache
+RAM (Memory)
+    SSD
+    HDD
+    FLASH
+    DVD
+
+
+    Hardware device events can be processed though polling interupt and DMA
+    polling is checking every so often for interrupt
+    interupt is like a door bell
+    Dynamic access is like having an assistant to handle interrupt
+
+
