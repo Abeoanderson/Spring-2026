@@ -33,4 +33,12 @@ shared responsibility model
         storeage
         network
         security
-        
+
+
+Acceptance testing - know when your done
+
+Intro to Software as a service
+
+ghostie - checkout
+
+zen - checkout

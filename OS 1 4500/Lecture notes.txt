@@ -45,3 +45,19 @@ RAM (Memory)
     Dynamic access is like having an assistant to handle interrupt
 
 
+
+Processes(programs):
+    processes are programs running by the cpu. processes are init from programs and are 
+    given space and time sharing by cpu. 
+
+    termination
+        normal exit(voluntary)
+        Error Exit(voluntary)
+        Killed by another process(involuntary)
+
+
+how many states can a process have 
+    TASk_RUNNING
+    TASK_INTERRUPTSBLE
+    EXIT_ZOMBIE
+    EXIT_DEAD
