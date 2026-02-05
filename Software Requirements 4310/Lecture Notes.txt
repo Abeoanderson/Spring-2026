@@ -1,3 +1,5 @@
 Requirements as early decisions
 
 Goals, Steakholders, Domain, Understanding and 
+
+Early Risk

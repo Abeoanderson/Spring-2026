@@ -42,3 +42,24 @@ Intro to Software as a service
 ghostie - checkout
 
 zen - checkout
+
+tailwind - css 
+
+owning code?
+
+kubernetes K8 - OS of the cloud
+    Ingress
+        -connect via web surver and internet
+        -host on a web server
+    compute
+        -CPU and RAM
+    storeage
+        -persistance
+    Node Management
+        -High availability 
+    Container Orchestration
+
+
+http vs http
+443 - 80
+secure - unencrypted

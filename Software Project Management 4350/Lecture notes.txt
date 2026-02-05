@@ -1,0 +1,6 @@
+Coordination, Dependencies, and Where Projects Get stuck
+    progress depends on coordination.
+    dependencies create friction
+    most projects get stuck quietly
+    AWS- 160000 layoffs
+    

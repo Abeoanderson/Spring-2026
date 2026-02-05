@@ -61,3 +61,18 @@ how many states can a process have
     TASK_INTERRUPTSBLE
     EXIT_ZOMBIE
     EXIT_DEAD
+
+
+Project 1 is making a kernal app with c, should be light, but dont procrastinate it
+
+
+processs have 3 states
+    ready
+    running
+    blocked
+
+pcb 
+    process control block
+    zombie process
+        process finishes execution(called exit)
+        
