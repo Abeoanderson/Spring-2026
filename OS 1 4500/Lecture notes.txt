@@ -30,6 +30,16 @@ different types of OS
 
 Kernel is the heart of OS
 
+A monolithic kernel is a model where all OS services run in kernel mode. 
+The pros of this are its faster due to the simple communication. The cons 
+are that its much larger and more complex system, so one bug or error can 
+crash the whole system and make maintaining/debugging very difficult
+
+A microkernal is a model where only essential services run in kernel mode, 
+like IPC, scheduling, and basic memory; the other functions run in user mode. 
+The pros of this is its more stable/secure because faults are isolated. 
+The cons are that it is slower and more work for IPC 
+
 Register
 Cache
 RAM (Memory)
