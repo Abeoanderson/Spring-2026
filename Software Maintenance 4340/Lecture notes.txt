@@ -18,3 +18,22 @@ start looking for projects:
 must already exist and be open source MIT/BSD/Apache/LGPL/GPL
 
 check out rust and memory saftey
+
+
+
+
+Testing:
+    the goal of testing is demonstrating that software meets requirements.
+    validation testing - tests that result is correct
+    defect testing - finding input sequences that lead to incorrect behavior
+        should also check for emergent behavior as much as possible
+
+
+
+validation - are we building the right thing?
+verification - are we building it correctly
+
+unit testing - testing individual classes and methods
+component testing - testing component interfaces
+
+fuzz testing - providing random input in order to find errors

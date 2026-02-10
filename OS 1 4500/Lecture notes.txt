@@ -75,4 +75,10 @@ pcb
     process control block
     zombie process
         process finishes execution(called exit)
-        
+
+
+multicore/threaded cpu, parral processing = hardware
+
+pc scheduling
+    FCFS
+    

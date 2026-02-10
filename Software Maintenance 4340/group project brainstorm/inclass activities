@@ -1,0 +1,15 @@
+Component testing
+    class Page
+        Number 
+        Text
+        Images
+        Graphical representations
+
+        methods
+            return all
+            get Number
+            get Text
+            get Images
+
+
+        

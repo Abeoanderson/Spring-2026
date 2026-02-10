@@ -63,3 +63,8 @@ kubernetes K8 - OS of the cloud
 http vs http
 443 - 80
 secure - unencrypted
+
+
+Agile is not nowl, nor was it ever water fall discussion?
+
+Test Driven Development
