@@ -90,5 +90,46 @@ pcb
 multicore/threaded cpu, parral processing = hardware
 
 pc scheduling
-    FCFS
-    
+    First come first serve
+    round robin(n time increments)
+    predetermined
+    non predetermined
+
+CPU scheduling advanced:
+    FIFO, RR, and Preditermed dont work for real time systems
+    we need more complex multilevel queue
+        we want to minimize respnse time and turnaournd time without knowing burst time
+        multilevel queue can assign priority to processs and pick high priority processes.
+
+        to avoid starvation we assign an allotment or an ammount of time
+        a process can remain at the priority level it has
+
+        rule 1 highest priority first
+        rule 2 if multiple have same priority use RR
+        rule 3 when a job enters the system it has highest priority
+        rule 4 once a job uses up its allotment at a given level its priority is reduced
+        rule 5 after some time period, move all jobs in the system to the topmost queue
+
+
+    CFS - completly fair scheduling
+        proportional shar or fair share
+            instead of optimzing turnaround or response time a schedulare might 
+            garuntee that each process gets a percentage of CPU time
+        use randomness in process sharing
+            each process will run for R amount of time
+            
+        non-fixed timeslice
+            CFS assignes a proportional timeslice per process
+
+        priority is enabled with niceness values
+
+        efficient data structure - use redblack trees for insertion deletion
+
+        CFS picks the lowest Vrun time to run next
+            VRUN time is the time a process has run already
+
+            Sched_latency
+            A typical value is 48 (ms)
+            Process’s timeslice = sched_latency / (the number of processes)
+
+        
