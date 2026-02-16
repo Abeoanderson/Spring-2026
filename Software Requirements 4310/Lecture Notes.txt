@@ -3,3 +3,12 @@ Requirements as early decisions
 Goals, Steakholders, Domain, Understanding and 
 
 Early Risk
+
+
+
+what makes early requirments defensible(wiegers)
+    Necessary
+    Unambigous
+    Testable
+    Feasible
+    Traceable

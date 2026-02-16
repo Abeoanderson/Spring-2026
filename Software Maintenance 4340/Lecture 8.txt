@@ -1,0 +1,26 @@
+Evolution vs Maintenance
+    evolution 1965 to desctibe growth characteristics
+        progressing sofgware from a lesser, simpler or worse state to a higher state.
+    maintenance 1976 for these three 
+        Corrective
+        Adaptive
+        Perfective
+        preventing software from failing
+
+    3 types of programs     
+        S-type: specification
+            approximations estimates based of requirments
+            no evolution, creates a new problem
+            example: calculate gcf or lcf
+        P-type
+            real world problems with inperfect solutions
+            evolution envisioned
+            example: playing chess
+        E-type 
+            embedded system. software becomes part of the world around it
+
+    8 laws
+        1. continuance
+        2. growing complexity
+        3. self regulation
+        4. conservation of organizational stability

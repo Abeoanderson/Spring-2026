@@ -68,3 +68,54 @@ secure - unencrypted
 Agile is not nowl, nor was it ever water fall discussion?
 
 Test Driven Development
+
+Archetecture Jams:
+    be mindful
+    start with a goal
+    lay out constraints and principles
+
+
+CAP Theorem, you can have 2 outa 3
+    Consistency
+        all clients no matter where they connect see the same data at the same time
+        instantanious communication: - websockets
+    Availability
+        every request you make to a part thats not broken gets a response
+        200 - ok
+        401 - unathorized
+        404 - unavailable
+        500s - server error
+    Partition Tolerance
+        the ability for the system to keep operating even if parts become seperated or removed
+
+Nodebook LM
+
+Brewers Conjecture Podcast:
+    Eric Brewer - CAP theorum 
+        cant have all three
+
+    Practical constraint that forces engineers to choose tradeoffs
+
+    Consistency - atomic data objects
+        all operations appear to occur in an instant all at once.
+        perfect consistant data
+    availability - every request must respond
+        even if their are network problems a response is still required
+    Partition Tolerance 
+        every issue is a separation 
+        when the internet was made it was designed to be a distributed system
+
+    asynchronous network   
+        no global clock, servers make decisions independendtly
+            diffference between slow and lost message is indistinguisable
+
+    partially syncrhouns network 
+        allow for timeouts
+
+    T-Connected consistancy
+        consistant after t time
+        promise to be perfectly atomicly consistent when the model is stable
+        if its stable for t time it snaps back
+
+
+    unavoidable tradeoffs
