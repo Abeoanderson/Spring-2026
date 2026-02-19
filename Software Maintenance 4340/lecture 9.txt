@@ -1,0 +1,57 @@
+Software evolution and maintenance 2
+    intention based
+        Corrective
+        Adaptive
+        Perfective
+        preventative
+    activity based
+        correction vs enhancement
+    evidence based
+        cluster
+            buisness rules
+                Enhancive
+                    adding and modifing business rules to enhance system functionality
+                Corrective
+                    correct bugs
+                    defesnive programing strategies
+                    modifying exception handling
+                Reductive
+                    dropping some data 
+                    decrease amount of data input
+                    decreasing amount of data produced
+            software properties
+                Adaptive
+                    Porting software to  a diffrence execution platform 
+                    COTS
+                Performance
+                    make changes that impact user, improving system
+                Preventive
+                    enhance maintainability
+                    make future tansistion possible
+                Groomative
+                    use more efficient or simpler components
+                    rename data
+                    change authorization
+                    backups
+            documentation
+                Updative
+                    out of data -> up to date documentation
+                    using formal notation
+                Reformative
+                    improving readability
+                    making consistant
+            support interface00
+                evaluative
+                    reviewing/inspecting program code and documentation
+                    testing/debugging
+                consulitive
+                    cost and length
+                    personnel help desk
+                    customers are assisted in preparing work requests
+                    provide expert knowledge about stuff
+                training - steakholders about implementation
+
+
+    regression testing - after each change that introduces to ensure no unintended break
+
+    

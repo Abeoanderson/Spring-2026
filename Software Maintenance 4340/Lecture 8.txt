@@ -24,3 +24,11 @@ Evolution vs Maintenance
         2. growing complexity
         3. self regulation
         4. conservation of organizational stability
+
+    impact anaylisis:
+        traceablility - requirments, design, code, test cases are identified
+        dependability - call graph-based or dependancy graph-based
+            find dependancy in code
+
+
+

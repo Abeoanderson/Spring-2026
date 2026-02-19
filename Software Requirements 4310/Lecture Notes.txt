@@ -12,3 +12,5 @@ what makes early requirments defensible(wiegers)
     Testable
     Feasible
     Traceable
+
+

@@ -132,4 +132,29 @@ CPU scheduling advanced:
             A typical value is 48 (ms)
             Process’s timeslice = sched_latency / (the number of processes)
 
-        
+
+
+    A parent process creates a process
+
+    inter process communication(IPC)
+        message sharing
+        kernal hosted messaging
+        shared memory
+
+
+    race conditions - multiple processes racing to use a space potentially
+        avoid with
+            mutual exclusion
+                make sure if one process is using a shared file others will be excluded
+                to provide mutual exclusion
+                    no two processes in the critial region simultaniously
+                    no assumptions made about speeds or number of cpu
+                    no process running outside its critical region may block another process
+                    no process must wait forever to enter its critical region
+            critical regions
+                part of system where shared files are
+
+            disabling interrupts - can be useful in certain situations, not helpful with multiple cpu
+            lock variables - shared lock 0 or 1
+            busy waiting - when process checks variable untill a value appears
+                a lock using this method is called a spin lock
