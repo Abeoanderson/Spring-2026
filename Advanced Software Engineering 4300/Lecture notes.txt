@@ -119,3 +119,43 @@ Brewers Conjecture Podcast:
 
 
     unavoidable tradeoffs
+
+
+    SMART
+    specific
+    measurable
+    actionable
+    realistic 
+    time goal
+
+    Requirments intros:
+        talk to customer
+        act it out and find out how it should flow
+        req:
+            functional
+                must show all movie listings
+            Performance
+                when i reserve a seat I should get that seat in x time
+            system/technical Requirments
+                has to run on rasberry pi so it must run on arm
+            specifications
+                we need to use a specific protocal to fit this requirment
+
+        User Stories:
+            Req = customer-oriented
+            define the what of the project
+            mutual understandance between customer and dev 
+            Connextra style:
+                As A, I want, So
+            Behavior-Driven Design(BDD)
+                performance defined on expected behavior
+            Gherkin
+                Given, When, Then
+
+            specification driven development:
+                giving user storeis with senerios to AI
+            
+                Planning Poker:
+                    blind voting on time estimates
+
+                

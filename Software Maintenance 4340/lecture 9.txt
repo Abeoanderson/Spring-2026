@@ -54,4 +54,5 @@ Software evolution and maintenance 2
 
     regression testing - after each change that introduces to ensure no unintended break
 
-    
+    reuse-oriented model of evolution and maintenance: 
+        full reuse model

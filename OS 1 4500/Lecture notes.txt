@@ -158,3 +158,26 @@ CPU scheduling advanced:
             lock variables - shared lock 0 or 1
             busy waiting - when process checks variable untill a value appears
                 a lock using this method is called a spin lock
+
+
+
+    Sleep and Wakeup - process manager
+        main issue is busy waiting
+        Producer
+            produces next item and puts item in buffer, increments count of items in buffer
+        Consumer
+            if buffer is empty Sleep
+            take item ou of buffer and decrement item print item
+
+        Semaphores - a var to indicate the num of pending wakeups
+            0 - means no pending wakeup call
+            positive - some nim of wake ups
+            down operations (request / p)
+                checks if a semaphor is > 0
+                    if so decrement the value and continue
+                    else the process is put to Sleep
+            up operation (realease / v)
+                increments the value of Semaphores
+                    but if one or more processes are sleeping
+
+        Look at the producer-consumer problems w/ semaphores
