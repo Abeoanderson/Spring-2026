@@ -9,7 +9,7 @@ int main() {
     printf("Parent process started with PID: %d\n", getpid());
 
     pid = fork();
-    
+
     if (pid < 0) {
         // Fork failed
         perror("fork failed");
@@ -24,7 +24,7 @@ int main() {
         sleep(120);
         printf("Child exiting.\n");
         // all done with child
-    } 
+    }
     else {
         // rest of parent logic
         printf("Parent Waiting... \n");
