@@ -1,6 +1,6 @@
 Requirements as early decisions
 
-Goals, Steakholders, Domain, Understanding and 
+Goals, Steakholders, Domain, Understanding and
 
 Early Risk
 
@@ -14,3 +14,41 @@ what makes early requirments defensible(wiegers)
     Traceable
 
 
+Conflict without override behavior
+    Event Approval: real operational context
+    200 event submissions per week
+    1 admin
+    20% of submissions violate policy
+    48 hour to approve event
+
+    Fast Turnaround
+    Policy Compliance
+    Low staff workload
+    Postive Student Experience
+
+    option A: Speed
+        The system shall process event submissions within 48 hours.
+        The system shall give admin adequate time to review submissions.
+        The loss is staff workload,
+        the 1 admin is likely to complain
+    option B: Oversight
+        The system shall check that submissions comply with all campus policies and regulations.
+        The system shall notify admins of policy violations.
+        The loss is still staff workload as 20% of submissions violate policy.
+        Again the 1 Admin is likely to be unhappy along with event planners that may have their events take longer to
+        approve.
+    Option C: Hybrid Automation
+        The system shall automate the approval process for events that comply with all campus policies and regulations.
+        The system shall notify admin of submissions failing to meet campus regulation and policy
+        The loss is Positive student experience, because miscomunication and delay are enevatable
+        Because the student planning experienc is sacked here, it is likely that the student body and planning
+        commities will be unhappy with this
+
+
+Dont say:
+    our system shall:
+        Support
+        Enable
+        Provide
+        Ensure
+        Facilitate

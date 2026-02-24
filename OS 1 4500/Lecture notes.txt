@@ -20,7 +20,7 @@ transitions between user/kernal
     exception
 
 
-different types of OS   
+different types of OS
     batch processing - process job one at a time
     time sharing OS - process mulitple jobs in round robin
     real-time OS - still time-sharing, but has deadlines for certain jobs
@@ -30,15 +30,15 @@ different types of OS
 
 Kernel is the heart of OS
 
-A monolithic kernel is a model where all OS services run in kernel mode. 
-The pros of this are its faster due to the simple communication. The cons 
-are that its much larger and more complex system, so one bug or error can 
+A monolithic kernel is a model where all OS services run in kernel mode.
+The pros of this are its faster due to the simple communication. The cons
+are that its much larger and more complex system, so one bug or error can
 crash the whole system and make maintaining/debugging very difficult
 
-A microkernal is a model where only essential services run in kernel mode, 
-like IPC, scheduling, and basic memory; the other functions run in user mode. 
-The pros of this is its more stable/secure because faults are isolated. 
-The cons are that it is slower and more work for IPC 
+A microkernal is a model where only essential services run in kernel mode,
+like IPC, scheduling, and basic memory; the other functions run in user mode.
+The pros of this is its more stable/secure because faults are isolated.
+The cons are that it is slower and more work for IPC
 
 Register
 Cache
@@ -57,8 +57,8 @@ RAM (Memory)
 
 
 Processes(programs):
-    processes are programs running by the cpu. processes are init from programs and are 
-    given space and time sharing by cpu. 
+    processes are programs running by the cpu. processes are init from programs and are
+    given space and time sharing by cpu.
 
     termination
         normal exit(voluntary)
@@ -66,7 +66,7 @@ Processes(programs):
         Killed by another process(involuntary)
 
 
-how many states can a process have 
+how many states can a process have
     TASk_RUNNING
     TASK_INTERRUPTSBLE
     EXIT_ZOMBIE
@@ -81,7 +81,7 @@ processs have 3 states
     running
     blocked
 
-pcb 
+pcb
     process control block
     zombie process
         process finishes execution(called exit)
@@ -113,11 +113,11 @@ CPU scheduling advanced:
 
     CFS - completly fair scheduling
         proportional shar or fair share
-            instead of optimzing turnaround or response time a schedulare might 
+            instead of optimzing turnaround or response time a schedulare might
             garuntee that each process gets a percentage of CPU time
         use randomness in process sharing
             each process will run for R amount of time
-            
+
         non-fixed timeslice
             CFS assignes a proportional timeslice per process
 
@@ -181,3 +181,16 @@ CPU scheduling advanced:
                     but if one or more processes are sleeping
 
         Look at the producer-consumer problems w/ semaphores
+
+
+Synchonization
+    sleep and wakeup - producer and consumer problem
+        semaphors
+        mutex
+
+Readers and Writers Problem
+    Additional readrs admitted as they com along
+    as long as ther's a steady supply of readers, writer wil lbe suspedned
+
+    Solution:
+        when a reader arrives, if a writer is waiting, the reader is suspedned behind the writer
