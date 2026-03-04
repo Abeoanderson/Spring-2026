@@ -194,3 +194,27 @@ Readers and Writers Problem
 
     Solution:
         when a reader arrives, if a writer is waiting, the reader is suspedned behind the writer
+
+
+Monitors - a higher-level synchonization primitive
+    only on eprocess can be active in a monitor at any instant, with complilers
+    help
+
+
+Deadlock:
+    Computer systems are full of resources that can onlhy be used by one proces at a time
+    if two processes simultaneously write to a printer, the result is gibberish
+    theirfor OS grant exclusive access to these resources
+
+    Resourcee Types:
+        Preemptable Resource
+            can be taken away from a process without causing ill effects
+            Memory, taking away the memory can just swap the storage to a new memory space
+        Non-Preemtptable resources
+            Cannot be taken away without causing failure
+            3d scanner, taking it away in the middle will ruin the scan
+
+    Dining Philosophers Problem
+        5 philisophers each have a plate in front of them and fork to their left
+            in total 5 plates 5 forks
+            each philosopher needs 2 forks too eat

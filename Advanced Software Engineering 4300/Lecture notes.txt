@@ -1,6 +1,6 @@
 Lecture 1:
 
-group project, 
+group project,
 
 agentic AI use, mulit AI use for cool stuff
 
@@ -15,7 +15,7 @@ Lecture 3:
     lunar lander code was hella buggy and failed frequently
     how can we make scalable reliable code?
 
-Distributed systems - sharing is caring, pay for what you use  
+Distributed systems - sharing is caring, pay for what you use
 
 shared responsibility model
     customer
@@ -24,7 +24,7 @@ shared responsibility model
         other saftey
     AWS
         software
-            compute 
+            compute
             storeage
             hardware
 
@@ -43,7 +43,7 @@ ghostie - checkout
 
 zen - checkout
 
-tailwind - css 
+tailwind - css
 
 owning code?
 
@@ -56,7 +56,7 @@ kubernetes K8 - OS of the cloud
     storeage
         -persistance
     Node Management
-        -High availability 
+        -High availability
     Container Orchestration
 
 
@@ -91,7 +91,7 @@ CAP Theorem, you can have 2 outa 3
 Nodebook LM
 
 Brewers Conjecture Podcast:
-    Eric Brewer - CAP theorum 
+    Eric Brewer - CAP theorum
         cant have all three
 
     Practical constraint that forces engineers to choose tradeoffs
@@ -101,15 +101,15 @@ Brewers Conjecture Podcast:
         perfect consistant data
     availability - every request must respond
         even if their are network problems a response is still required
-    Partition Tolerance 
-        every issue is a separation 
+    Partition Tolerance
+        every issue is a separation
         when the internet was made it was designed to be a distributed system
 
-    asynchronous network   
+    asynchronous network
         no global clock, servers make decisions independendtly
             diffference between slow and lost message is indistinguisable
 
-    partially syncrhouns network 
+    partially syncrhouns network
         allow for timeouts
 
     T-Connected consistancy
@@ -125,7 +125,7 @@ Brewers Conjecture Podcast:
     specific
     measurable
     actionable
-    realistic 
+    realistic
     time goal
 
     Requirments intros:
@@ -144,7 +144,7 @@ Brewers Conjecture Podcast:
         User Stories:
             Req = customer-oriented
             define the what of the project
-            mutual understandance between customer and dev 
+            mutual understandance between customer and dev
             Connextra style:
                 As A, I want, So
             Behavior-Driven Design(BDD)
@@ -154,8 +154,44 @@ Brewers Conjecture Podcast:
 
             specification driven development:
                 giving user storeis with senerios to AI
-            
+
                 Planning Poker:
                     blind voting on time estimates
 
-                
+Shape up
+    product development form basecamp
+    six-week Cyclees
+    dont count hours or question how days are spent
+
+    Principles of shaping
+        wireframes are too concrete
+
+
+    SOLID Principles
+
+
+MVC, MVT & Restful Archetecture
+    MVT: model-view-template
+        model manages data
+        view manages buisness logic and interacts with models
+        templates: handels the user interface
+
+        Unlike MVC, views in MVT handel both the controller and view functionality
+        Django(python)
+    MVC: Model-veiw-control
+
+    Headless app -
+        allows you to scale the API you care about
+
+    REST:
+        Representational state transfer
+        CRUD Operations - routing
+            GET
+            POST
+            PUT
+            DELETE
+
+Prioritization
+    MoSCoW(Must have, should have, could have, wont have)
+    WSFJ (Weighted shortest job first)
+    Risk-Value Matrix
