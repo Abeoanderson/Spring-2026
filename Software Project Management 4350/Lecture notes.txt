@@ -6,3 +6,8 @@ Coordination, Dependencies, and Where Projects Get stuck
 
 
 Tension comes from structural errors
+
+
+CMMI as an organizational coordination system
+    Capability Maturutiy Moderation integration
+    improves stability over agile which would improve adaptablitiy

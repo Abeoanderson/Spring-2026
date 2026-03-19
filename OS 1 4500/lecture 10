@@ -1,0 +1,20 @@
+POSIX thread creation and termination
+
+find prime numbers between 1 and 1000
+11, 11/2 11/3 11/4 etc
+
+multiple workers split for 1 to 200, 201 to 400 and etc
+
+
+Use pthread_create() and pthread_join() correctly
+
+Pass arguments to threads and retrieve return
+values
+
+
+Recognize when to join vs. when to run long-lived
+threads
+
+
+Apply core Thread API guidelines to avoid
+common pitfalls

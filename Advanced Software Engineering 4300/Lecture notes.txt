@@ -178,8 +178,6 @@ MVC, MVT & Restful Archetecture
 
         Unlike MVC, views in MVT handel both the controller and view functionality
         Django(python)
-    MVC: Model-veiw-control
-
     Headless app -
         allows you to scale the API you care about
 
@@ -195,3 +193,17 @@ Prioritization
     MoSCoW(Must have, should have, could have, wont have)
     WSFJ (Weighted shortest job first)
     Risk-Value Matrix
+
+FIRST principles of testing
+    Fast
+    Independant
+    Repeatable
+    Self-Validating
+    Timely
+SMART
+
+testing
+    unit testing
+    integration testing
+    end to end testing
+    mutation testing

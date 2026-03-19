@@ -1,0 +1,31 @@
+10:50 - 12:05
+1 cheat sheet A4 both sides
+
+Fill in the blank 10q
+multisegment questions4
+    2 definitions
+    2 explanation
+    math type
+
+
+Study
+    Lecttrue slides with the questions in slides
+    assignment questions
+    Reference Books
+
+
+Cheat sheet
+    1st lecture - hierachry of memory
+        cache memory fastest
+            L1
+            L2
+        Ram
+        SSD
+        HDD - slow memory
+
+
+Turn around time - arrival time till completion time
+Response time - time from arrival till first run
+
+timeslice = (weight/total_weight) * sched_latenccy
+vrun time

@@ -1,0 +1,51 @@
+Lec 2
+    Software Engineering
+    software process
+        SDLC
+        Specification
+        Development
+        V & V
+        Evolution and maintinance
+
+    Engineering models
+        Waterfall
+        Incremental Development
+        Integration and configuration
+
+    Software failures
+    Software ethical principles
+
+Lec 3
+    UML diagrams - unified model language
+        software modeling standard
+    Model driven or based Development
+    Fundamental modeling perspectives
+        context
+        structure
+        interacion
+        behavior
+
+    6 main models
+
+
+Lec 5
+    UML state
+    UML component
+
+Lec 6
+    Software system 4
+    Behavior models
+        Data-driven
+        Event driven
+
+    Model driven SE
+        MDSE
+        MBSE
+        MDA - Model driven arcetecture
+        DSM - Domain specific modeling
+
+
+Lec 7
+    Software testing
+    Testing can only show the presence of bugs
+    Inspection or review also

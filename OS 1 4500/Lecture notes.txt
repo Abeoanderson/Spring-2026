@@ -218,3 +218,21 @@ Deadlock:
         5 philisophers each have a plate in front of them and fork to their left
             in total 5 plates 5 forks
             each philosopher needs 2 forks too eat
+
+    4 Conditions for deadlock
+        mutual exclusion - each resource assinged to exactly 1 process
+        hold and wait - process holding resources request additional resources
+        non-preemptive - previously grandted resources cannot be forcibly taken away
+        circular wait - Must be a circular chain of 3 or more processes
+            each is waiting for resoruces held by others in the chain
+
+        4 strategies
+            ignor the problem
+            Detection and recovery
+            Dynamic avoidance
+            prevention
+
+
+    Safe states
+        if it is not deadlocked, and, there is some scheduling order in which every process can run
+        to completion even if all of them request their maximu number of resources immediatly

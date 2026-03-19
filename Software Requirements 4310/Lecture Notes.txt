@@ -52,3 +52,5 @@ Dont say:
         Provide
         Ensure
         Facilitate
+
+Scenario-based requirments analysis
