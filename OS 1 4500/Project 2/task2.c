@@ -20,7 +20,7 @@
         // file open
         FILE* file = fopen("message.txt", "r");
         if (!file) {
-            perror("Error opening file");
+            perror("error: could not open file");
             exit(1);
         }
         // put char in buffer using mutex to stop race conditions with consumer
