@@ -37,3 +37,17 @@ unit testing - testing individual classes and methods
 component testing - testing component interfaces
 
 fuzz testing - providing random input in order to find errors
+
+
+Reuse types:
+    With reuse and for reuse
+    using:
+    Application frameworks
+    Software Product Lines (SPL)
+
+
+Application Engineering(product dev)
+    development with reuse
+    composes specific applications systems by
+        reusing existing assets
+        developing any new components
