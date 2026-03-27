@@ -1,8 +1,16 @@
+/*
+  my_list-forming.c:
+  Each thread generates a local data node and attaches it to a local tree k times.
+  It then attaches the local tree to the global tree to cut down  the # of critical region entries
+  There are num_threads threads. The value of "num_threads" is input by the student.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <pthread.h>
 #include <sys/time.h>
+#include <sys/param.h>
+#include <sched.h>
 
 #define K 200
 
@@ -97,6 +105,6 @@ int main(int argc, char* argv[]) {
     long runtime =
         (endtime.tv_sec - starttime.tv_sec) * 1000000 +
         (endtime.tv_usec - starttime.tv_usec);
-    printf("Total run time is %ld microseconds.\n", runtime);
+    printf("total run time is: %ld microseconds.\n", runtime);
     return 0;
 }
