@@ -12,7 +12,10 @@
 #include <sys/param.h>
 #include <sched.h>
 
+//update k for testing so the script can change it
+#ifndef K
 #define K 200
+#endif
 
 struct Node {
     int data;
@@ -93,7 +96,7 @@ int main(int argc, char* argv[]) {
         pthread_join(producer[i], NULL);
     }
     gettimeofday(&endtime, NULL); // get end time
-    // free da list node by node
+    // free da list node by node in a slgihtly more efficient way
     struct Node *tmp = List->header;
     while (tmp != NULL) {
         struct Node *next = tmp->next;
@@ -105,6 +108,6 @@ int main(int argc, char* argv[]) {
     long runtime =
         (endtime.tv_sec - starttime.tv_sec) * 1000000 +
         (endtime.tv_usec - starttime.tv_usec);
-    printf("total run time is: %ld microseconds.\n", runtime);
+    printf("Time: %ld microseconds.\n", runtime);
     return 0;
 }
