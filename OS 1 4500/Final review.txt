@@ -1,0 +1,76 @@
+Date: 12-May-2026
+Time: 10:20-12:20
+Where: KFL 239
+Closed book but 1 cheet sheet A4 both sides
+
+175 points
+10 MC                 - 75 points
+5 Fill in the blank   - 25 points
+3 2-segment questions - 75 points
+                      - 175 points total
+
+memory mangament & Page replacment Ch3 [Definlty reveiw this some more]
+   Ideally programs want large fast non-volitile and cheap memory
+   Memory Hirerchy
+        Small amojut of fast expensive memory - cache
+        some medium fast medium expesinve main memory
+        gigabytes of slow cheap disk storage
+
+    Memory management tasks
+        allocate and de allocate memory for processes
+        keep trac of used memory and by whome
+        address translation and protection
+
+    without memory abstruction
+        mono-progaming: one program at a time sharing memory with OS
+
+    Memory abstraction: address spaces
+        no memory abstraction: exposing the entire physical memory
+
+    Dynamic relocation
+        even after allocation of memory we can expand memory if needed
+    Static relocation
+        memory cannot be changed once allocated
+
+    processes have base and limit registers that show where memory starts and how much a program has accesss too
+        only OS can change base/limit registers
+
+    Dealing with memomry - swapping, bit mapping, linked lists
+
+    Virtual memory - the combined size of the program, data, and stack may exceed the amount of physical memory avialable.
+        know how to translate physical to virtual along with page table size and TLB stuff
+
+
+    Page replacement Algs
+        Review all 10 please
+
+    why is the optimal page size 4 KB
+
+file systems Ch4 & input ouput Ch 5
+    File structrue/naming/types
+    File access
+        sequential access - must enter at start and traverse all files till the one you want is selected
+        random access - can select any file needed
+    directories: single-level direcotry sysems
+
+
+    I/O memory mapping
+
+    I/O CPU: device notifiying cpu
+        interupt
+        polling(busy waiting)
+        DMA Direct memory access
+
+    Lecture 19 will be updated
+
+Security theory and implementation Ch9
+    Theoretical part
+        fundamentals of OS security
+        controling access to resources
+        formal models of secure systems
+        authentication
+    Reality/in-practice part
+        Exploiting software
+        exploiting hardware
+        insider attacks
+        OS hardening
