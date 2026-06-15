@@ -1,0 +1,6 @@
+from a data set:
+y = mx + b
+the line of best fit (data science)
+    using rules to make predictions
+
+we can also train our NN by correcting guessses to help the weights balance.
