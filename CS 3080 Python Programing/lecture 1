@@ -4,3 +4,208 @@ the line of best fit (data science)
     using rules to make predictions
 
 we can also train our NN by correcting guessses to help the weights balance.
+
+HW reveiw Zen of python
+
+Key principles:
+Readability matters most. Code is read far more often than it is written.
+Explicit is better than implicit. Make behavior clear rather than relying on hidden assumptions.
+Simple is better than complex. Choose straightforward solutions whenever possible.
+Complex is better than complicated. If complexity is necessary, keep it organized and understandable.
+Flat is better than nested. Avoid excessive indentation and deeply layered logic.
+Sparse is better than dense. Use whitespace and clear formatting to improve readability.
+Errors should not pass silently. Handle exceptions intentionally instead of ignoring them.
+There should be one obvious way to do something. Consistency makes code easier to learn and maintain.
+Practicality beats purity. Real-world solutions are often more important than perfect theoretical designs.
+Namespaces are valuable. Organize code to avoid naming conflicts and improve clarity.
+
+One sentence takeaway
+Write code for humans first and computers second: make it clear, simple, explicit, and maintainable.
+You can view the original Zen of Python in a Python interpreter by typing: "import this"
+
+Histroy of python
+    1980s:
+        Guido van Rossum a dutch programer was working on ABC
+    1989-1991:
+        pyton is born on 1991 which includes
+            class inheritance
+            exception handleing
+            functions and modules
+            the core data types: str, list, dict, etc
+
+    1991-2000:
+        Python 1.0 is realased which includes:
+            lambda, map, filter, and reduce
+        python 1.4 brings keyword argumetns and built in support for complex numbers
+        python 1.5 added the re model for regular expression, and better namspace support
+
+    2001-2010:
+        python 2x introduced:
+            list comprehensions
+            garbac collection via refrencing and cycle detection
+            unicode support
+
+        over the 2.x sereies many features were added like:
+            iterators, generatiors, decorators, and with statements
+
+    2008-2020:
+        python 3.x brings
+            print became a function
+            better unicode handleing
+            remove old constructs
+            integer division changes
+
+        python 2.7 is the last major release of the python 2.x line
+            maintinence for 2.7 ended on jan 1 2020
+
+    python 3.x is powerful and used in
+        web dev(djanog, flask)
+        data science(pandas, numpy, tensorFlow)
+        AI and machine learning
+        automation, scription IoT
+
+
+PyPI - liberary for python packages
+
+Python doesnt containt arrays nativly
+array =  a collection of items of the same type
+list = a collection of any object any data type
+
+
+Applications of Python
+    Artificial Intelligence & Machine learning
+        tensorFLow, PyTorch, scikit-learn, Keras, XGBoost
+    Data Science & Data Analysis
+        Pandas, NumPy, Matplotlib, Seaborn, plotly
+    Web Development
+        Django, Flask, FastAPI, Tornado
+    Automation and Scripting(DevOps/SysAdmin)
+        Pytest, Ansible, CI/CD pipeline
+    Game Dev
+        PyGame, Panda3D, Ursina
+    Mobile App Dev
+        Kivy, BeeWare, PyQt, Chaquopy (for Android)
+    Desktop application Dev
+        Tkinter, PyQt, wxPython, PySide
+    Scientific Computing and Research
+        SciPy, SymPy, BioPython, Astropy
+    Internet of Things
+        Raspberry Pi, Arduino (via Firmata), ESP8266
+    Cybersecurity & Ethical Hacking
+        Scapy, Nmap, Paramiko
+    API Dev and Testing
+        Flask, FastAPI, Requests (for consumption), PyTest, unittest, Postman scripting with Python
+    Software Dev and & Dev Tools
+        IDE's, Scripting, linting
+    Education and Learning
+        Jupyter notebooks   SQLAlchemy, psycopg2, RabbitMQ, Kafka clients
+    API's & Integration
+
+
+    Rest API's let clients talk to a server by making http requests and reciviing responses
+    GET POST PUT DELETE
+
+    Rest isnt the only way to build API's
+
+    SOAP is used for legacy sysgtem or when access is important to moniter and observe
+
+
+
+ways to print Things
+    f string: print(f"{val}")
+    string concatenation: print("hello ", name)
+    str.format(): print("hello, {}".format(name))
+    useing %: print("hello, %s. you are %d years old. " %(name, age))
+
+Lexical analysis (Tokenizer)
+    Input
+        def greet(name):
+            print(f"hell0, {name}")
+    output
+        'def', 'greet', '(', 'name', ')', ':', 'print', '(', 'f"Hello, {name}"', ')']
+
+Parsing and AST generation
+    Module
+    ├── FunctionDef (name='greet')
+        └── arguments
+        └── body
+            └── Expr (print statement)
+
+
+
+What are scripts and modules?
+    a script is a python file intended to be executed directly
+    a module is a python file intended to be importated to another python file and used in that file.
+
+def main():
+    print("this runs when the fiels is exeuted as a script.")
+
+
+if __name__ == "__main__":
+    main() # main will only run if its scripted not importated
+
+
+Rules for Python variables:
+•A variable name must start with a letter or the underscore character
+•A variable name cannot start with a number
+•A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+•Variable names are case-sensitive (age, Age and AGE are three different variables)
+•A variable name cannot be any of the Python keywords.
+
+mulit word variables work though a few methods
+    Camel case = myVariableName
+    Pascal case = MyVariableName
+    Snake case = my_variable_name
+
+
+function return types
+    void if no return statement is defined
+    otherwise can return any data type
+    0 to any number of values can be returned
+    python returns many valuables using tubles
+
+Tuples:
+    A set of elements that can be of different types.
+    my_tuple = (1, 2, 3)
+    another_tuple = 4, 5, 6
+    is_a_tuple = (42,)  # must include a trailing , for single item tubles
+    not_a_tuple = (42)
+
+    tuples can be derefenced like my_tuple[0]
+    or by unpacking name, age, city = ('Alice', 30, 'New York')
+    print(name) # outputs Alice
+
+if the return statement is treated either as a single value or a tuple then it means we
+can also return different types of data:
+
+def get_user_info():
+    name = "Alice" # str
+    age = 30 # int
+    is_active = True # bool
+    hobbies = ["reading", "cycling"] # list
+    return name, age, is_active, hobbies
+
+Can also return data as a collection
+def get_data():
+    return [1, 2, 3], {'name': 'Alice'}, {4, 5, 6}
+
+lst, dct, st = get_data()
+
+you can also return an instance of a class or custom return type
+
+class User:
+    def __init__(self, name):
+        self.name = name
+def create_user():
+    return User("Alice")
+
+u = create_user()
+print(u.name) # Output: Alice
+
+__init__ is a constructor and is automaticaly invoked when you create a new instance of a class
+its main funcitn is to set attributes
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name # Set the instance attribute 'name'
+        self.age = age # Set the instance attribute 'age'
