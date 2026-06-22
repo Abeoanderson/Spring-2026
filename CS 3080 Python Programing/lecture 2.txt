@@ -1,0 +1,137 @@
+Global variables - vars that are cerated outside of a function  
+    global vars can be used by everyone
+
+x = "awesome"
+
+def myfunc():
+    x = "fantastic"
+    print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+
+output:
+Python is fantastic
+Python is awesome
+
+by defualt creating a variable inside a funcitn would be local but we can use the "global" keyword to make a global variable 
+defining a global var inside a funcion can overwrite a global var with the same name
+
+Python Data types
+    defines the kind of value a var holds and what opperations can be perfomred on it
+    built in data types:
+        int - integer numbers = 42, -7, 0
+        float - Floating-point numbers = 3.14, -.0.01
+        complex - Complex numbers = 3 + 4j, -2j
+        str - unicode text = "hello world"
+        list - ordered, mutable collection
+        tuple - ordered, immutable collection
+        set - unordered, no duplicates { 1, 2, 3}
+        frozenset - immutable version of set frozenset([1,2,3])
+        dict - key-value pairs {'name':'alice', 'age': 30}
+        bool - Truth values True,False
+        bytes - immutable byte sequences b'hello'
+        bytearray - mutable byte sequences bytearray([50, 100, 75])
+        memoryview - view over byte data memoryview(b'abc')
+
+        mutable vs immutable
+            mutable collections can change size
+            immutable collections cannot change size
+
+        ordered vs unordered
+            ordered items have a fixed positiion(index) as added and can be refenced from that index (everything but sets)
+            unordered items have no fixed position (only sets)
+
+        can use isinstance(4.5, float) # True
+
+operations
+/ float division
+// floor division
+% modulus
+** exponentiaiion
+        
+built in operations
+abs()
+round(x,num)
+pow(2,3) # 8
+divmod(10, 3) # (3,1)
+
+import math
+math.sqrt()
+math.factorial()
+math.log()
+math.sin()
+
+import cmath
+z + 1j
+cmath.sqrt(z) # complex square root
+cmath.phase(z) # polar angle
+
+review atomic set operations please
+
+string indexing and slicing
+[start: stop: step] defualt is start 0 and step 1
+s = "python"
+s[0] = 'P'
+s[-1] = 'n'
+s[1:4] = 'yth'
+s[:3] = 'Pyt'
+s[::2] "Pto" because just step is 2
+
+
+string operations:
+str.upper() Convert to uppercase "abc".upper() → 'ABC'
+str.lower() Convert to lowercase "ABC".lower() → 'abc'
+str.capitalize() Capitalize first letter "hello".capitalize() → 'Hello'
+str.title() Title-case string "hello world".title() → 'Hello World'
+str.strip() Remove whitespace " hi ".strip() → 'hi'
+str.lstrip() Left-strip " hi".lstrip() → 'hi'
+str.rstrip() Right-strip "hi ".rstrip() → 'hi'
+str.replace(old, new) Replace substrings "ha ha".replace("ha", "ho") → 'ho ho'
+str.split(sep) Split into list "a,b,c".split(",") → ['a', 'b', 'c']
+str.join(iterable) Join with separator ",".join(['a', 'b']) → 'a,b'
+str.startswith() Check prefix "hello".startswith("he") → True
+str.endswith() Check suffix "hello".endswith("lo") → True
+str.find(sub) Index of substring (first) "hello".find("l") → 2
+str.rfind(sub) Index of substring (last) "hello".rfind("l") → 3
+str.index(sub) Like find(), raises error if not found "hello".index("e")
+str.count(sub) Count occurrences "banana".count("a") → 3
+str.isdigit() Checks if all chars are digits "123".isdigit() → True
+str.isalpha() Checks if all are alphabetic "abc".isalpha() → True
+str.isalnum() Alphanumeric check "abc123".isalnum() → True
+str.isupper() All characters uppercase? "ABC".isupper()
+str.islower() All characters lowercase? "abc".islower()
+str.isspace() All characters are whitespace? " \n\t".isspace()
+
+raw strings no excape interpetatino
+r"C:\new\folder"
+
+
+set operations
+A | B = union
+A & B = intersection
+A - B Difference:
+A ^ B  Symmetric difference\
+
+
+Dictionary methods
+dict.get(k[,v]) Get value for key k, return v if missing
+dict.items() Returns view of (key, value) pairs             #importatn
+dict.keys() Returns view of keys                            #importatn
+dict.values() Returns view of values                        #importatn
+dict.pop(k[,d]) Remove key and return value
+dict.update(...) Merge another dict or pairs into it
+dict.setdefault() Like get(), but sets value if not found
+dict.copy() Shallow copy of the dictionary
+fromkeys() Creates new dict from sequence of keys
+del d[x] removes key 'x'
+d.pop('y')
+d.clear()
+
+dictionaries are commonly used to interact with JSON stuff
+
+mport json
+data = {"name": "Tom", "age": 25}
+json_string = json.dumps(data) # dict -> JSON string
+parsed = json.loads(json_string) # JSON string -> dict

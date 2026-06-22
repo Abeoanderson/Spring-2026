@@ -1,0 +1,52 @@
+immutable objects:
+    tuple, strings,
+
+mutable objects:
+    lists, 
+
+
+More on functions
+
+applying a function to an iterable, rather then applying on all and storing all apply it once on the item when the call is made to generate it
+
+generators - light weight iterable where only one item at a time is boruht to ram from main memoery
+    next key work to get next item
+    yeilds
+
+map - applying math to an iterable
+
+comprehensions we have lists in python but not array comprehensions, 
+    can also be used wiht sets, dictionaries, and generators
+
+    newlist = [x for x in fruits if "a" in x]
+Python has some built in methods for lists
+    append
+    clear
+    copy
+    count
+    extend
+    index
+    insert
+    pop
+    remove
+    reverse
+    sort    
+
+    with - open files and do not have to close them
+
+
+
+
+Flow controls
+
+OOP and classes
+super() = is a built in function that returns a proxy objet representing the parent class. it allows:
+    call methods from parent class inside child class
+    avoid explivitly naming th eparent class
+    Easily extend or reuse the behavior of the parent class.
+
+    we use super too:
+        To call the parent class constructor and initialize the parent part of an object.
+        To call overridden methods in the parent class while extending them in the child class.
+        To make your code more maintainable and compatible with complex inheritance (multiple inheritance).
+

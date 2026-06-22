@@ -209,3 +209,36 @@ class Person:
     def __init__(self, name, age):
         self.name = name # Set the instance attribute 'name'
         self.age = age # Set the instance attribute 'age'
+
+
+classes are blueprints for objects for example:
+
+class user:
+    def __init(self, name):
+        self.name = name
+def create_user():
+    return User("Alice") # calling the class name calles init automatically
+
+u = create_user()
+print(u.name)
+
+python can return functions as a return type
+
+def outer(x):
+    def inner(y):
+        return x + y
+    return inner
+    
+adder = outer(10)
+print(adder(5))
+
+lambda means a function without a name
+
+def power(exponent):
+    return lamda base: base ** exponenet
+
+square = power(2)
+cube = power(3)
+
+print(square(4))
+print(cube(4))
