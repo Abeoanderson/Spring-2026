@@ -91,3 +91,135 @@ class DemoUtils:
     filename = "demo"
     demo_number = 0
     filename = f"{filename}_{demo_number}"
+    @classmethod
+    def change_filename(cls, name):
+        cls.filename = f"{name}_{cls.filename.split('_')[1]}"
+    
+    @classmethod
+    def update_demo_number(cls):
+        cls.filename = f"{cls.filename.split('_')[0]}_{cls.demo_number}"
+
+    def __init__(self, folder="current"):
+        self.path = folder
+        if self.path != "current":
+            self.path = os.path.join(os.getcwd(), self.path)
+            if not os.path.exists(self.path):
+                os.makedirs(self.path)
+    
+    def update_filepath(self):
+        if self.path != "current":
+            self.filepath = os.path.join(self.path, DemoUtils.filename)
+        else:
+            self.filepath = DemoUtils.filename
+
+    def new_demo(self):
+        DemoUtils.demo_number += 1
+        DemoUtils.update_demo_number()
+        self.update_filepath()
+
+        self.text_path = self.filepath + ".txt"
+        self.cvs_path = self.filepath + ".csv"
+        self.json_path = self.filepath + ".json"
+        print(f"\nRunning demo {DemoUtils.demo_number} with new filename: {DemoUtils.filename}")
+
+    def demo(self, name="demo"):
+        if name != "demo":
+            DemoUtils.change_filename(name)
+
+        # running first demo
+        self.new_demo()
+        FileUtils.write_text_file(self.text_path, ["List String Line 1\n", "List String Line 2\n", "List String Line 3\n"])
+        demo_list = FileUtils.read_text_file(self.text_path, "list_string")
+        demo_dict = FileUtils.read_text_file(self.text_path, "raw_dictionary")
+        print("Demo List after list of strings:", demo_list)
+        print("Demo Raw Dictionary after list of strings:", demo_dict)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_text_file(self.text_path, ("Tuple String Line 1\n", "Tuple String Line 2\n", "Tuple String Line 3\n"))
+        demo_list = FileUtils.read_text_file(self.text_path, "list_string")
+        demo_dict = FileUtils.read_text_file(self.text_path, "raw_dictionary")
+        print("Demo List after Tuple:", demo_list)
+        print("Demo Raw Dictionary after Tuple:", demo_dict)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_text_file(self.text_path, [1, 2, 3])
+        demo_list = FileUtils.read_text_file(self.text_path, "list_int")
+        demo_dict = FileUtils.read_text_file(self.text_path, "raw_dictionary")
+        demo_list_string = FileUtils.read_text_file(self.text_path, "list_string")
+        print("Demo List after List Int:", demo_list)
+        print("Demo Raw Dictionary after List Int:", demo_dict)
+        print("Demo List String after List Int:", demo_list_string)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_text_file(self.text_path, (4.4, 5.5, 6.6))
+        demo_list = FileUtils.read_text_file(self.text_path, "list_float")
+        demo_dict = FileUtils.read_text_file(self.text_path, "raw_dictionary")
+        demo_list_string = FileUtils.read_text_file(self.text_path, "list_string")
+        print("Demo List after Tuple Float:", demo_list)
+        print("Demo Raw Dictionary after Tuple Float:", demo_dict)
+        print("Demo List String after Tuple Float:", demo_list_string)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_text_file(self.text_path, {"key1": "value1", "key2": "value2"})
+        demo_list = FileUtils.read_text_file(self.text_path, "formatted_dictionary")
+        demo_dict = FileUtils.read_text_file(self.text_path, "raw_dictionary")
+        demo_list_string = FileUtils.read_text_file(self.text_path, "list_string")
+        print("Demo List after Dictionary:", demo_list)
+        print("Demo Raw Dictionary after Dictionary:", demo_dict)
+        print("Demo List String after Dictionary:", demo_list_string)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_text_file(self.text_path, "Single String Line as input")
+        demo_list = FileUtils.read_text_file(self.text_path, "list_string")
+        demo_dict = FileUtils.read_text_file(self.text_path, "raw_dictionary")
+        print("Demo List after Single String Line:", demo_list)
+        print("Demo Raw Dictionary after Single String Line:", demo_dict)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_text_file(self.text_path, 123.45)
+        demo_list_string = FileUtils.read_text_file(self.text_path, "list_string")
+        demo_list_float = FileUtils.read_text_file(self.text_path, "list_float")
+        demo_dict = FileUtils.read_text_file(self.text_path, "raw_dictionary")
+        print("Demo List String after Float:", demo_list_string)
+        print("Demo List Float after Float:", demo_list_float)
+        print("Demo Raw Dictionary after Float:", demo_dict)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_csv_file(self.cvs_path, ["Column1", "Column2", "Column3"])
+        demo_list = FileUtils.read_csv_file(self.cvs_path, "list_string")
+        demo_dict = FileUtils.read_csv_file(self.cvs_path, "raw_dictionary")
+        print("Demo List after CSV List String:", demo_list)
+        print("Demo Raw Dictionary after CSV List String:", demo_dict)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_csv_file(self.cvs_path, {"Column1": "Value1", "Column2": "Value2"})
+        demo_list = FileUtils.read_csv_file(self.cvs_path, "list_string")
+        demo_dict = FileUtils.read_csv_file(self.cvs_path, "dictionary")
+        print("Demo List after CSV Dictionary:", demo_list)
+        print("Demo Dictionary after CSV Dictionary:", demo_dict)
+
+        # runnning new demo
+        self.new_demo()
+        FileUtils.write_json_file(self.json_path, {"key1": "value1", "key2": "value2"})
+        demo_json = FileUtils.read_json_file(self.json_path)
+        print("Demo JSON after writing JSON file:", demo_json)
+
+
+
+if __name__ == "__main__":
+    demo1 = DemoUtils("experiments1")
+    demo1.demo()
+
+    demo2 = DemoUtils("experiments2")
+    demo2.demo("CreatedByDemo2")
+
+    demo1.change_filename("ChangedByDemo1")
+    demo2.demo()

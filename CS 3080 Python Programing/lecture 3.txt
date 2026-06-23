@@ -50,3 +50,8 @@ super() = is a built in function that returns a proxy objet representing the par
         To call overridden methods in the parent class while extending them in the child class.
         To make your code more maintainable and compatible with complex inheritance (multiple inheritance).
 
+
+user Input:
+name = input("Enter your name: "
+print(f"hello, {name}))
+
