@@ -1,0 +1,30 @@
+comprehensions == [expression for item in iterable ( optional: guarded with if statment)]
+                [expression if statement else expression for item in iterable]
+                quared_matrix = [[ item*item for item in row ] for row in my_list]
+                string_matrix = [[ str(item) for item in row ] for row in my_list]
+            
+
+                we can also have nested list comprehensions
+                matrix = [[i*j for j in range(3)] for i in range(3)]
+                or
+                [[expression for item in iterable1] for iterable1 in iterable2]
+
+dictionary comprehensions are also cool == {x:x**2 for x in range(5)} -> {1:1, 2:4, 3:9, 4:16, 5:25}
+
+
+using super to extent
+clas Dog(Animal):
+    def speak(self): 
+        super().speak() #calls animal.speak
+        print("Dog Barks") # ovrrides / adds behavior
+
+defualt methods are regular methods that take self as the first parameter and operate on instance data
+
+static methods are decorated with @staticmethod
+    dont take self or cls parameters
+    behave like regular functions that live inside the class Namespaces
+
+class methods are decorated with @classmethod
+    take cls as the first parameter 
+    operate on the class, not instances
+
