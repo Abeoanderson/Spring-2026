@@ -1,0 +1,105 @@
+Memory Management, File Handling, Dunder Methods
+
+deep copy, shallow copy, assignment
+    assignment is like a pointer
+    shallow copy looks at outer bag, 
+    deep copy fully copies ever level - copy.deepcopy() or import copy as cp so cp.deepcopy()
+    custom objects are nested so they must be copied
+
+
+file handeling:
+    with open(filename, mode)
+    mode can be:
+        r - read only
+        rb - read in binary mode
+        r+ - read and write mode
+        rb+ - read and write in binary mode
+        w - write mode
+        wb - write in binary mode
+        w+ - write and read mode
+        wb+ - write and read in binary mode
+        a - append mode
+        ab - append in binary mode
+        a+ append and read mode
+        ab+ - append and read in binary mode
+        x  - exlusive creation mode
+        xb - exclusive binary creation mode
+        x+ - exclusive create plus read and write
+        xb+ - exclusive creation with read and write in binary mode.
+
+    with file open
+        read() -> single string
+        readline() -> single line
+        readlines() -> list of lines
+
+    we can write to a file with
+        for line in lines:
+            f.write()
+        or
+
+        f.writelines(lines)
+
+    .seek(offset) - move curser
+    .tell() - show position of curser
+
+
+    OS module contians various methods for dealing with stuff
+        os.rename('old.txt', 'new.txt')
+        os.remove('file.txt')
+        os.mkdir('new_folder')
+        os.rmdir('new_folder')
+
+
+Dunder methods __method__ are special methods: 
+    Customize built-in behavior
+    Overload operators
+    Define how your objects behave in various contexts
+    They're also called magic methods or special methods.
+    
+    dunder methods let our custom class objects behave like built in python pbjects 
+        len + [], in, for, with,
+        popular dunder methods include:
+            __new__(cls) - create new instance, calls init
+            __init__(self, ...) - initailizes the object with values
+            __del__(self) - destructor
+            __len__(self) - returns length of object
+            __str__(self) - returns string representation of object
+            __repr__(self) - developer- oreinted unambigous representatation of object
+        also used for atribute access and managemnet
+            __getattr__
+            __getattribute__
+            __setattr__
+            __delattr__
+            __dir__
+            __call__ - makes object callable like a function
+        containier and swquence dunders
+            __len__ - returns legnth of object
+            __getitem__(self, key) - Access elements via obj[key]
+            __setitem__(self, key, value) - set element
+            __delitem__(self, key) - delet element
+            __iter__(self) - returns iterator
+            __next__(self) - retuns next item
+            __contains__(self, item) - impliments in keyword
+        can also be used for operator overloading
+            __add__ - +
+            __sub__ - -
+            __mul__ - *
+            __truediv__ - /
+            __floordiv__ - //
+            __mod__ - %
+            __pow__ - **
+        can also be used for comparision opperators
+            __eq__ ==
+            __ne__ !=
+            __lt__ <
+            __le__ <=
+            __gt__ >
+            __ge__ >=
+        also can use unary operators
+            __neg__ -obj
+            __pos__ +obj
+            __abs__ abs(obj)
+        finally some otherwise
+            _bool__, __hash__, __contains__, __index__
+
+
