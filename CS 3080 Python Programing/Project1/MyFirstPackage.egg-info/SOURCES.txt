@@ -1,0 +1,7 @@
+setup.py
+MyFirstPackage/__init__.py
+MyFirstPackage/my_math_utils.py
+MyFirstPackage.egg-info/PKG-INFO
+MyFirstPackage.egg-info/SOURCES.txt
+MyFirstPackage.egg-info/dependency_links.txt
+MyFirstPackage.egg-info/top_level.txt

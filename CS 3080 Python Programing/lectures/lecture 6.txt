@@ -1,0 +1,98 @@
+collections can be imported using
+    import collection as C
+        with this style methods form collection must be called like this
+            collection.method()
+    from collection import method1, method2
+        here tho they can be called just method1()
+
+    if we want to import a collection that does not reside in the same directory we can use:
+        absolute path
+        export the module as a package  
+
+in the collectsion module we have
+    namedtuple:
+        from collections import namedtuple
+        Point = namedtuple('Point',[x,y])
+        p = Point(1,2)
+        print(p.x, p.y) # 1 2
+    dequeue (double ended queue)
+        same as a queue but can work form both sides
+        deque() # Creates
+        append() # addes to right side
+        appendleft() # addes to left side
+        pop() # pop right
+        popleft() # pop left
+    Counter() (dict subclass for counting hashable objects)
+        c = Counter("banana")
+        print(c) # Counter({'a': 3, 'n': 2, 'b': 1})   
+        methods:
+            .most_common(n) returns n most common elements
+            .elemenets() iterate over elements with count
+    OrderedDict
+        dictionary that remembers insert order
+            note this is obsolute after 3.7 because built in dict remmebers insertion order
+    DefaultDict
+        like a dictionary but with default key values if missing
+    ChainMap
+        combines multiple dictionaries into a single view
+
+Packages
+    Packages have __init__.py 
+        this include from module import .
+    also include setup.py which contains build instructions
+    can export package using pip install .
+
+    mypackage
+        setup.py
+        README.me 
+        pyproject.toml
+        package/
+            __init__py
+            module1
+            module2
+
+    setup.py contains
+        # setup.py
+        from setuptools import setup, find_packages
+
+        setup(
+            name='MyFirstPackage',
+            version='0.1',
+            description='A simple math utility package',
+            author='Abe Anderson',
+            packages=find_packages(), # Automatically finds all packages
+            install_requires=[], # Add dependencies if needed
+        )
+    packages can be uploaded using
+        python setup.py sdish bdist_wheel
+        and 
+        twine upload dist/* # note need pypi account
+
+    can 
+
+
+
+Intro to Machine Learning
+    rule based AI 
+    data learning based AI 
+    WHy ML?
+        Solves complex problems that traditional programing cannot
+        Automate repetitive tasks with accuracy
+        improves and adaps with futher use
+        handels huge ammounts of data quickly
+    Types of ML:
+        supervised learning
+            learning from labeled data
+                for example sick or healthy patients
+        unsupervised learning
+            lerning form unlabeled data to deterimine trends
+                for example group by age or gender
+        reinforced learning
+            learn though trial and error    
+                for example identify fruit after correction
+    ML has a few steps
+        collect data
+        clean data
+        feed inputs
+        check outputs
+        correct and teach model
