@@ -1,0 +1,91 @@
+Event handling:
+
+client server model
+    client requests
+    server ack
+    server sends back info
+    our browser (client) requests data from a website server.
+    A database client connects to a database server to retrieve data.
+
+        client  
+            Initiates connection, sends requests, waits for responses
+        
+        Server  
+            Waits for requests, processes them, sends responses
+
+coding style rules
+    always import your modules and packages at the begining of the code
+    always declare classes if needed first
+    after classes declare functinos
+    after functions include a if __name=="main": and put executable code here
+    use list comprehensions unless needed to use map/reduce
+    use zip to avoid having extra for loops when itearting thouh lists with equal lengths
+    for every problem always try to code from scratch but use packages to shorten code
+
+    
+Network programming
+    connecting multiple devices or programs to communicate and share resources.
+        To exchange data between applications
+        Remote data access (APIs, databases)
+        Building distributed systems
+        Web development, client-server architecture
+
+Protocols for networking
+    TCP (Transmission Control Protocol) – Reliable, connection-oriented, ordered data (web, email, file transfer)
+    UDP (User Datagram Protocol) – Unreliable, connectionless, faster (live streaming, gaming)
+    HTTP/HTTPS – Web communication
+    FTP – File transfer
+    SMTP/POP3/IMAP – Email
+
+socket is an endpoint for sending or reciving data accross a networking
+    key socket functions
+        socket() - create a socket
+        bind() - bind to an address and port (server)
+        listen() - listen for incoming connections (server)
+        accept() - accept a connection (server)
+        connect() connect to a server (client)
+        send() / sendall() - send data
+        recv() - recieve data 
+        close() - close conneection
+    
+    socket called with socket.socket(socket.address family, socket.connection_type)
+    family address:
+        AF_INET - IPv4
+        AF_INET6 - IPv6
+        AF_UNIX - inter-process communication on same machine
+    
+    connection types:
+        SOCK_STREAM - tcp
+        SOCK_DGRAM - udp
+        SOCK_RAW - raw, needs admin privledges
+    
+    .encode()
+    .decode() 
+    everything is sent in binary
+        
+
+kali linux - most advanced penetration testing distribution
+
+MTU - maximum transmission unit - size of packets transmited
+    larger packets = less frequent transmissions. 
+    larger packets lead to more data lose for connection loss
+
+
+MultiVariate Linear Regression
+    in normal linear regression y = mx + b we just have the one Y as a predicted value
+    but imagine we had multiple features to predict?
+    y = w1*x1 + w2*x2 + b
+    prediction = np.dot(X, W) + bias
+
+    sigmoid (value): 1/1 -exp(-val) gives a range of 0-1
+
+
+Logicistic regression:
+    yes or no using linear regression to sigmoid to get a 0-1 value yes or no
+
+
+softmax function: makes disjoint variables joint so that we can pick the highest activation accuratly
+
+relu: 
+
+

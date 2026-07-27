@@ -1,0 +1,33 @@
+neural networks
+    each layer is a linear regreesion with some activation function on top
+    at th elast layer softmax is used only as activation function for classification
+    avoid always using the same activation function in 2 layers next to each other 
+        - leads to vanishing gradient problem
+            meaning that the values become so small that the deriviates get closer to 0
+
+    usually higher number of neruons leads to higher accuracy but it will take longer to learn
+
+    precepton - single layer NN
+
+async threading, multi-processing all achieve concurrency in code
+
+threading vs async
+    progamming model
+        A - requries defining coroutiens wihth async harder to debug as well
+        T - simpler, traditional fuction calls with thread objects, each is easier to debug
+    memory and overhead
+        A - Lightweight, low overhead
+        T - each thread mas memory stack and higher overhad due to OS context switching
+    use async when:
+        Your tasks are I/O-bound (e.g. network requests, database calls, file I/O)
+        The libraries you use have async support (async/await APIs)
+        You need to handle many concurrent connections or tasks efficiently (e.g. thousands of sockets)
+        You want minimal resource usage, no thread overhead
+        You want to avoid thread safety issues (no race conditions within the event loop)
+    use Threading when:
+        Your tasks are I/O-bound, but you are using blocking libraries (no async API)
+        You need concurrency but cannot refactor existing code to async easily
+        You have blocking functions that must run concurrently to keep your main program responsive
+        You’re integrating with legacy code or external libraries that do not support async
+        You need to run a small number of blocking tasks in parallel (e.g. GUI + background worker)
+    
